@@ -1,0 +1,115 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    font-size: 30px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 22% 20% 7% 28% 23%;
+    grid-template-rows: 29% 26% 7% 18% 20%;
+    gap:10px;
+    
+
+    grid-template-areas:
+        "left-top top-center1 top-center1 top-center2 right-top"
+        " left-top center center center right-top "
+        " left-bottom center center center right-top "
+        " left-bottom center center center right-bottom "
+        " left-bottom bottom-center1 bottom-center2 bottom-center2 right-bottom "
+    ;
+
+}
+
+.left-top { 
+    background-color: #f3c8c8;
+    border: 2px solid white;
+    grid-area: left-top;
+    border-radius: 20px;
+}
+
+.left-bottom {
+    background-color: #fdeef4;
+    border: 2px solid white;
+    grid-area: left-bottom;
+    border-radius: 20px;
+}
+
+.top-center1 {
+    background-color: #fdeef4;
+    border: 2px solid white;
+    grid-area: top-center1;
+    border-radius: 20px;
+}
+
+.top-center2 {
+    background-color: #fdeef4;
+    border: 2px solid white;
+    grid-area: top-center2;
+    border-radius: 20px;
+}
+
+.center {
+    grid-area: center;
+    background-color: #f3c8c8;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+
+}
+
+.circle {
+    grid-area: center;
+    height: 317px;
+    width: 330px;
+    background: radial-gradient(pink, rgb(221, 126, 141));
+    border-radius: 50%;
+}
+.center img{
+    position:absolute;
+    bottom: 0;
+    height: 400px;
+}
+
+.bottom-center1 {
+    background-color: #fdeef4;
+    border: 2px solid white;
+    grid-area: bottom-center1;
+    border-radius: 20px;
+}
+
+.bottom-center2 {
+    background-color: #fdeef4;
+    grid-area: bottom-center2;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.right-top {
+    background-color: #fdeef4;
+    border: 2px solid white;
+    grid-area: right-top;
+    border-radius: 20px;
+}
+
+.right-bottom {
+    background-color: #fdeef4;
+    border: 2px solid white;
+    grid-area: right-bottom;
+    border-radius: 20px;
+}

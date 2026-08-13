@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+
+/* h2 {
+    font-size: 60px;
+    font-weight: 500;
+    padding: 0px 20px;
+}
+
+nav {
+    height: 70px;
+    max-width: 100%;
+    padding: 5px 40px;
+    background-color: #2ca0ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part2 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+h4 {
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+h5 {
+    font-size: 30px;
+    opacity: 0 ; but it covers the space so that
+    display: none;
+}
+
+ /* @media (max-width:600px) {
+    nav {
+        background-color: #ff0909;
+        padding: 0px 25px;
+
+    }
+
+    h5 {
+        display: block;
+    }
+
+    h4 {
+        display: none;
+    }
+}  */
+
+/* biro yha se animation shuru kra h ohkk */
+
+
+/* @keyframes anime{
+    from{
+        left:0;
+        rotate: 0;
+    }
+    to{
+        left:75%;
+        background-color: #33c7ec;
+        rotate:360deg;
+        border-radius: 20%;
+    }
+}
+.box{
+    margin:30px;
+    height: 300px;
+    width: 400px;
+    background-color: chartreuse;
+    animation: anime;
+    animation-duration: 2s ;
+    position:absolute;
+    animation-delay: 1s;
+} */
+
+/* img {
+    height: 400px;
+    position: absolute;
+    animation: pikki;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+} */
+
+/* @keyframes pikki{
+    from{
+        top:0;
+        left:0;
+        rotate:0;
+    }
+    to{
+        left:70%;
+        rotate:360deg;
+        top:0%;
+    }
+} */
+
+
+/* @keyframes pikki {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        left: 75%;
+        top: 0%;
+
+    }
+
+    50% {
+        left: 75%;
+        top: 50%;
+
+    }
+
+    75% {
+        left: 0%;
+        top: 50%;
+
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+} */
+/* .parent {
+    height: 50px;
+    background-color: #f07070;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+
+    animation-name: text;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+} */
+
+.parent {
+    height: 50px;
+    display: flex;
+    /* gap:20px; */
+    animation-name: line;
+    gap: 20px;
+
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.inner {
+    background-color: #000000;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+}
+
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+@keyframes line {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
